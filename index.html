@@ -4,8 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leaflet Map</title>
- <script src="./node_modules\leaflet\dist\leaflet.js"></script>
-  <script src="./node_modules\leaflet-sidebar-v2\js\leaflet-sidebar.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+<!--  <script src="./node_modules\leaflet\dist\leaflet.js"></script>
+  Add Leaflet CSS -->
+<!-- <script src="./node_modules\leaflet-sidebar-v2\js\leaflet-sidebar.min.js"></script>  -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<!-- Add Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<link rel="stylesheet" href="node_modules\leaflet-sidebar-v2\css\leaflet-sidebar.css" />
+<script src="node_modules\leaflet-sidebar-v2\js\leaflet-sidebar.js"></script>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+
   <script defer src="app.js"></script>
 
   <!-- Herausfinden warum zum teufel das einbinden fehler schmeißt -->
@@ -13,8 +23,14 @@
 </head>
 <body>
 
-  <div id="map" style="height: 300px;"></div>
-  <div id="sidebar"></div>
+  <div id="map"></div>
+  <div id="sidebar">
+    <div class="leaflet-sidebar-pane" id="home">
+    <h1 class="leaflet-sidebar-header">
+      sidebar-v2
+      <span class="leaflet-sidebar-close"></span>
+    </h1>
+  </div>
 
 
 </body>
